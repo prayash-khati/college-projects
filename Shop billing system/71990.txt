@@ -1,0 +1,10 @@
+
+***INVOICE***
+Invoice No=71990
+Customer Name=ABIRAL
+Customer's Product=HEADPHONE
+Purchased Date=2018-01-11 15:34:31.764704
+Product Price=780
+Discount Amount=120
+Product Quantity=3
+**************
