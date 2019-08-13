@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta tags-->
+	<meta name="description" content="PSYDER Website">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="Prayash Khati">
+
+	<!--Inserting favicon-->	
+	<link rel="icon" type="image/png" sizes="32*32" href="favicon/icon.png">
+
+	<title>Research</title><!--Title of the webpage-->
+
+	<!--Linking the external CSS file-->
+	<link rel="stylesheet" href="style.css">
+
+	<!--Internal CSS-->	
+	<style type="text/css">
+		/*CSS of the body and various classes*/	
+		body {font-family: Arial;
+			background:url("Images/show.jpg");
+			background-size: 100% ;}
+
+		.research{width: 70%;margin: auto;
+			margin-top: 30px;
+			margin-bottom: 30px;}/*Adjusting the total width of class to 70 percent*/
+
+		.card{background-color: #f0f0f0;
+			padding:20px;padding-left:70px;
+			padding-right:70px;
+			margin:10px;
+			border-radius: 7px ;}/*Curves the edges of the border*/
+
+		.research img{
+			display: block;/*Places elemets from a new line*/
+			margin: auto;
+			width: 700px;
+			margin-bottom: 70px;
+		}
+		.research p{
+			text-align: justify;/*Aligning the text to justify*/
+		}
+	</style>	
+</head>
+<body>
+	<header>
+		<!--Associating the class "box" to this division-->		
+		<div class="box">
+			<!--Associating the class "brand" to this division-->		
+			<div id="brand">
+				<a href="Home.htm"><img src="Images/logo.jpg" width=100px></a><!--Linking the brand logo to the homepage-->
+				<a href="Home.htm"><h1><span class="highlight">PSYDER</span><span style="font-size:20px;display:inline-block;line-height: 10px;">Knowledge | Strength | Integrity</span></h1></a><!--Using the span tag to stylize particular text-->
+			</div>
+			<nav>
+				<ul>
+					<li><a href="Home.htm">Home</a></li>
+					<li><a href="Blog.htm">Blog</a></li>
+					<li><a href="Bio.htm">Bio</a></li>
+					<li class='current'><a href="Home.htm"><a href="Research.htm">Research</a></li><!--Highlighting the opened page in the navigation bar-->
+					<li><a href="Contact.htm">Contact</a></li>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+	<section class="research">
+		<div class="card">
+			<p>During the creation of this particular website that you are viewing, i looked upon various websites in the internet and found out various ways of improving and styling my website  by adding various features and elements. The color selection for the website components also helps the website to look professional along with an approriate background. Thus the various websites that  i looked upon and took some of the knwoledge form those websites.The websites and their shared components are listed below.</p>
+			<h2>www.lancaster.ac.uk</h2>
+			<p>From this institutional website of the Lancaster University, i looked upon the heading part of the website where the University brand,navigation bar and its orientation were perfect so i implemented some of its design into my website.</p>
+			<img src="websiteResearch/website1.jpg"><!--Inserting Image files into the website-->
+			<h2>www.webascender.com</h2>
+			<p>From this development and marketing website, the special feature which catched my eye was the button in the home screen placed at the center which would link up to the desired webpage of the respective website.</p>
+			<img src="websiteResearch/website2.png">
+			<h2>www.combadi.com</h2>
+			<p>From the contact page of this website,the flex display between the contact form and information looks perfectly balanced and oriented.Similarly, the layout of the contact form also looks plain simple and interactive at the same time. So, this idea was also implemented in my website because of its simple yet sweet design.  </p>
+			<img src="websiteResearch/website3.jpg">
+			<h2>www.craigmorrison.ca</h2>
+			<p>This website amazed me with its text styles and composition od many colors used in the text which made the webpage look attractive and users attention can be easily grabed with the help of this text effect.Therefore, i took the help of span tag to stylize my texts in the similar way.</p>
+			<img src="websiteResearch/website4.jpg">
+			<h2>www.nosotroshq.com</h2>
+			<p>This website that i came upon had a slideshow of images which actually saved al lot of space for other components rather than keeping all the pictures in a list.Thus, from this website i was inspired and took this idea into my website to show some of the photographs in the portfolio section.</p>
+			<img src="websiteResearch/website5.jpg">		
+		</div>
+	</section>
+	<footer>
+		<div class="box">
+			<p>Prayash Khati, Copyright &copy; 2018</p><!--It symbolizes the copyright icon-->
+		</div>	
+	</footer>			
+</body>
+</html>

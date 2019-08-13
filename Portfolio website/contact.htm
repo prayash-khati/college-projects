@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta tags-->
+	<meta name="description" content="PSYDER Website">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="Prayash Khati">
+
+	<!--Inserting favicon-->
+	<link rel="icon" type="image/png" sizes="32*32" href="favicon/icon.png">
+
+	<title>Contact</title><!--Title of the webpage-->
+
+	<!--Linking the external CSS file-->
+	<link rel="stylesheet" href="style.css">
+
+	<!--Internal CSS-->
+	<style type="text/css">
+		body{
+			font-family: Arial;/*Setting the font family*/
+			background:url("Images/show.jpg");background-size: 100%;
+		}
+
+		.contact{
+			background:#f1f1f1;/*Setting the background color*/
+			padding: 20px;/*Setting the padding to the class*/
+			display:flex;/*Dividing the display area according to column wise*/
+			margin: auto;/*Setting the margin of the class*/
+			width: 60%;/*Setting the total width of the class*/
+			margin-top: 30px;
+			margin-bottom: 30px;
+			border-radius: 10px;/*Curves the edges of the border by 10 pixels*/
+		}
+
+		.leftcolumn{
+			flex: 50%;/*Giving 50 percent usable space to leftcolumn*/
+			margin-left: 40px;
+			margin-right: 30px;
+			padding-right: 120px;
+		}
+
+		.rightcolumn{
+			flex:50%;/*Giving 50 percent usable space to rightcolumn*/
+			background:url("Images/stars.jpg") no-repeat;
+			background-size:100% 100% ;
+			margin-left: -50px;
+			margin-right: 20px;
+			margin-top: 20px;
+			padding: 20px;
+		}
+
+		.rightcolumn p{
+			color:#ffffff;
+			font-size: 16px;/*Setting the font size in pixels*/
+			}
+		.rightcolumn h1{
+			color: #e8491d;
+			font-size: 20px;/*Setting the font size in pixels*/
+			font-family: calibri;
+			text-shadow: 1px 1px #000000;/*Applying 1 pixel shadow to the text*/	
+		}
+
+		#send{
+			font-weight: bold;/*Setting the text to Bold*/
+			border-radius: 4px;/*Curves the edges of the border by 4 pixels*/
+			line-height: 40px;
+			color:white;
+			background:#e8491d;
+			width: 100px;
+			text-align: center;
+			margin-left: 315px;
+		}
+
+		#send:hover{
+			cursor:pointer;/*Setting the pointer to coursor while hovering on the given area*/
+			background-color: #d13d15;	
+		}
+
+		input,textarea{
+			border-radius:4px;
+			border:1.5px solid #c0c0c0;
+			background:#E8E8E8;
+			font-family: Arial;
+		}	
+		
+	</style>
+</head>
+<body>
+	<header>
+		<!--Associating the class "box" to this division-->	
+		<div class="box">
+			<!--Associating the class "brand" to this division-->
+			<div id="brand">
+				<a href="Home.htm"><img src="Images/logo.jpg" width=100px></a><!--Linking the brand logo to the homepage-->
+				<a href="Home.htm"><h1><span class="highlight">PSYDER</span><span style="font-size:20px;display:inline-block;line-height: 10px;color: #d5d5d5;">Knowledge | Strength | Integrity</span></h1></a><!--Using the span tag to stylize particular text-->
+			</div>
+			<nav>
+				<ul>
+					<li><a href="Home.htm">Home</a></li>
+					<li><a href="Blog.htm">Blog</a></li>
+					<li><a href="Bio.htm">Bio</a></li>
+					<li><a href="Research.htm">Research</a></li>
+					<li class='current'><a href="Contact.htm">Contact</a></li><!--Highlighting the opened page in the navigation bar-->
+				</ul>	
+			</nav>
+		</div>
+	</header>
+
+	<section class="contact">
+		<div class="leftcolumn">
+			<h1 style="font-family: Courier;font-size: 30px;text-align: center;">Contact Us</h1><!--Inline CSS-->
+			<p style="text-align: justify;">Please feel free to communicate with me if you want to experience some of the work that i do. Reach out to me if you have any questions, i'll be very much happy to answer your queries.
+			</p>
+			<form id="myForm" name="contactUs"><!--Creating a form-->
+				<p >Name: &nbsp;<input type="text" name="name" size="60" ></p><!--Inserting a textbox to write the name-->
+				<p >Email: <input  type="E-mail" name="email" size="60" ></p><!--Inserting a textbox to write the Email-->
+				<p >Message: <br><textarea name="message" rows="14" cols="62"></textarea></p><!--Inserting a textarea to write the Messages-->
+			</form>
+			<div id="send">SUBMIT</div>
+		</div>
+		<div class="rightcolumn">
+			<h1>EMAIL</h1>
+			<p>Prayashkhati27684@gmail.com</p>
+			<br>
+			<h1>MOBILE</h1>
+			<p>+977 9860320478</p>
+			<br>
+			<h1>ADDRESS</h1>
+			<p>Jorpati-4,<br>
+				44600 Kathmandu,<br>
+				Nepal.
+			</p>		
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		
+		var button =document.getElementById("send");
+		button.onclick= function(){/*Initializing the function when the button is pressed*/
+
+			var Name=document.forms["contactUs"]["name"].value;/*Assigning the values to the variable*/
+			var Email=document.forms["contactUs"]["email"].value;
+			var Message=document.forms["contactUs"]["message"].value;
+
+			if(Name == "" || Email == "" || Message == ""){/*Condition to check of the  name, email and message are empty*/
+				alert("Empty fields found. Please fill the form properly.")/*Launch a dialog box printing the given message*/	
+			}
+
+			else{
+				document.getElementById("myForm").reset();/*Reset the form named nyForm*/
+				alert("Thank You for the feedback.");/*Launch a dialog box printing the given message*/
+			}	
+		}
+	</script>
+
+	<footer>
+		<div class="box">
+			<p>Prayash Khati, Copyright &copy; 2018</p><!--It symbolizes the copyright icon-->
+		</div>	
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!--meta tags-->
+	<meta name="description" content="PSYDER Website">
+	<meta name="keywords" content="HTML,CSS,JavaScript">
+	<meta name="author" content="Prayash Khati">
+
+	<!--Inserting favicon-->
+	<link rel="icon" type="image/png" sizes="32*32" href="favicon/icon.png">
+
+	<title>Blog</title><!--Title of the webpage-->
+
+	<!--Linking the external CSS file-->
+	<link rel="stylesheet" href="style.css">
+
+	<!--Internal CSS-->
+	<style type="text/css">
+		/*CSS of the body and various classes*/
+		body{font-family:Arial;
+			background:url("Images/show.jpg") no-repeat;
+			background-size: 100% 100%;}
+
+		.blog{display: flex;
+			width: 80%;
+			margin: auto;
+			margin-top: 30px;}
+
+		.leftcolumn{flex: 75%;}/*Giving 75 percent usable space to left column*/
+		.rightcolumn{flex: 25%;}/*Giving 25 percent usable space to right column*/
+
+		.card{background-color: #f0f0f0;/*Setting the background color*/
+			padding: 20px;
+			margin:10px;
+			border-radius: 7px ;}/*Curves the edges of the border*/
+
+		.card li{
+			display: inline;/*To display the contents in a line*/
+			padding:0 5px 0 5px; 
+		}
+		.card a{
+			text-decoration: none;/*Removing any text decorations*/
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<!--Associating the class "box" to this division-->
+		<div class="box">
+			<!--Associating the class "brand" to this division-->
+			<div id="brand">
+				<a href="Home.htm"><img src="Images/logo.jpg" width=100px></a><!--Linking the brand logo to the homepage-->
+				<a href="Home.htm"><h1><span class="highlight">PSYDER</span><span style="font-size:20px;display:inline-block;line-height: 10px;">Knowledge | Strength | Integrity</span></h1></a><!--Using the span tag to stylize particular text-->
+			</div>
+			<nav>
+				<ul>
+					<li ><a href="Home.htm">Home</a></li>
+					<li class='current'><a href="Blog.htm">Blog</a></li><!--Highlighting the opened page in the navigation bar-->
+					<li><a href="Bio.htm">Bio</a></li>
+					<li><a href="Research.htm">Research</a></li>
+					<li><a href="Contact.htm">Contact</a></li>
+				</ul>	
+			</nav>
+		</div>
+	</header>
+
+	<section class="blog">
+		<div class="leftcolumn">
+			<div class="card">
+				<h2 style="font-size: 36px;line-height: 22px;">The Era of Technology </h2><!--Inline CSS-->
+				<h5>April 7, 2018</h5>
+				<p style="text-align: justify;">Technology has become an important part of human life. We are being surrounded by technolgy day by day. Our each and every need
+is being fulfilled by technology.People have differnet ways of utilizing the technologies available to mankind.From smartphones
+to computers, technology has advanced at a rapid speed.Although it has helped mankind in various factors in life, it has also 
+damaged the nature and humanlife in its own way.The positive impact of technology has helped us in  medical sector, engineering
+sector, agricultural sector and many more.Technology has helped us to travel,communicate and learn much more things. The most impactful technology for human beings
+is smartphones and its various features. Mobile devices has taken over the world.<br><!--Starting from the next line-->
+<br>
+With the advancement of mobile devices, there are its pros and cons. While the mobile phones have created a easy way for communication without the need of cables 
+and external power source. It is also famous among all for its portability and functionality. For the people, it has become a portable entertainment hub where
+ music, movies and many other entertainment facilities is present. Similarly, mobile devices is a must for studying purposes where student have the ability to 
+reach the internet wherever they want at any place. It helps the students in their research in different topics. Also mobile phones are useful in business field
+ where businessmen can keep up with the updating stock market and staying in touch with their clients and employees. Mobile phones has also become a life saver 
+in emergency cases where emergency calls can be made when in any kind of serious trouble.<br>  
+<br>
+The mobile telephones having its many advantages also consists of various cons and creates a bad impact on studies. Students are being addicted to their mobile
+ devices and forgetting about their studies, they only think of the entertainment purposes of mobile devices. Students are wasting their time in games and social
+ applications rather than spending their time in studies and utilizing their mobile devices in studying purposes. Similarly, another major issue is using the mobile
+ phone while driving which has resulted in various accidents and major fatality. Another worrying problem is regarding the health issues of people. The frequent use
+ of mobile phones increases stress level, causes many eye related issues and also increases the risk of brain cancer. In this raging popularity of mobile phones, there
+ has become a risk of privacy being leaked by hackers. Also, mobile theft can be fatal and privacy can be leaked. Similarly, mobile phones can be very distractive and 
+can leave your important work pending. Mobile phones being an addictive drug can interrupt you with notifications while you’re doing an important assignment. Thus, this
+ misuse of mobile telephones must be controlled and strict rules must be followed to minimize the various problems created by mobile devices.<br> 
+<br>
+Similarly,many different sectors in technology has lead to peace as well as war.The evolution of nuclear materials has increased the theat of destruction to mankind.
+The water reseources, oil resources are drying up day by day by the excess use by human beings.With its benifits comes lots of problems and tension to the nature. In the name 
+of technology, space is being polluted with man-made sattelites which are left in the orbit polluting our nature. Harmful chemicals from factories and industries have damaged
+ the atmosphere of our earth.
+				</p>
+			</div>
+		</div>
+		<div class="rightcolumn">
+			<div class="card">
+				<h2 style="font-family: Papyrus;font-size: 28px;">About Me</h2>
+				<p style="text-align: justify;"><span><a href="Bio.htm">Click Here</a></span> if you want to know about me, my experiences and my works.</p>
+			</div>
+			<div class="card">
+				<h2 style="font-family: Papyrus;font-size: 28px;">Follow Me</h2>
+				<ul>
+					<!--Linking the social icons into their respective websites-->
+					<li><a href="https://www.facebook.com/thapa.reshma.1" target="blank"><img src="Social_icons/facebook.png" width="30"></a></li>
+					<li><a href="https://www.instagram.com/reshma_thapa.a/" target="blank"><img src="Social_icons/instagram.png" width="30"></li>
+					<li><a href="https://twitter.com/" target="blank"><img src="Social_icons/twitter.png" width="30"></li>
+					<li><a href="https://www.youtube.com/" target="blank"><img src="Social_icons/youtube.png" width="35"></li>
+				</ul>	
+			</div>
+		</div>				
+	</section>
+	<footer>
+		<div class="box">
+			<p>Prayash Khati, Copyright &copy; 2018</p><!--It symbolizes the copyright icon-->
+		</div>	
+	</footer>
+</body>
+</html>
